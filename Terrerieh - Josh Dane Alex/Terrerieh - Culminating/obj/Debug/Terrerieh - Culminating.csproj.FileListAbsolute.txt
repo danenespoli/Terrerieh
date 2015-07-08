@@ -1,0 +1,13 @@
+C:\Users\Period 2.BM-CS-10\Documents\Culminating-eh\Terrerieh - Culminating\Terrerieh - Culminating\bin\Debug\Terrerieh - Culminating.exe.config
+C:\Users\Period 2.BM-CS-10\Documents\Culminating-eh\Terrerieh - Culminating\Terrerieh - Culminating\bin\Debug\Terrerieh - Culminating.exe
+C:\Users\Period 2.BM-CS-10\Documents\Culminating-eh\Terrerieh - Culminating\Terrerieh - Culminating\bin\Debug\Terrerieh - Culminating.pdb
+C:\Users\Period 2.BM-CS-10\Documents\Culminating-eh\Terrerieh - Culminating\Terrerieh - Culminating\obj\Debug\Terrerieh - Culminating.csprojResolveAssemblyReference.cache
+C:\Users\Period 2.BM-CS-10\Documents\Culminating-eh\Terrerieh - Culminating\Terrerieh - Culminating\obj\Debug\MainWindow.baml
+C:\Users\Period 2.BM-CS-10\Documents\Culminating-eh\Terrerieh - Culminating\Terrerieh - Culminating\obj\Debug\MainWindow.g.cs
+C:\Users\Period 2.BM-CS-10\Documents\Culminating-eh\Terrerieh - Culminating\Terrerieh - Culminating\obj\Debug\App.g.cs
+C:\Users\Period 2.BM-CS-10\Documents\Culminating-eh\Terrerieh - Culminating\Terrerieh - Culminating\obj\Debug\Terrerieh - Culminating_MarkupCompile.cache
+C:\Users\Period 2.BM-CS-10\Documents\Culminating-eh\Terrerieh - Culminating\Terrerieh - Culminating\obj\Debug\Terrerieh - Culminating.g.resources
+C:\Users\Period 2.BM-CS-10\Documents\Culminating-eh\Terrerieh - Culminating\Terrerieh - Culminating\obj\Debug\Terrerieh___Culminating.Properties.Resources.resources
+C:\Users\Period 2.BM-CS-10\Documents\Culminating-eh\Terrerieh - Culminating\Terrerieh - Culminating\obj\Debug\Terrerieh - Culminating.csproj.GenerateResource.Cache
+C:\Users\Period 2.BM-CS-10\Documents\Culminating-eh\Terrerieh - Culminating\Terrerieh - Culminating\obj\Debug\Terrerieh - Culminating.exe
+C:\Users\Period 2.BM-CS-10\Documents\Culminating-eh\Terrerieh - Culminating\Terrerieh - Culminating\obj\Debug\Terrerieh - Culminating.pdb

@@ -1,0 +1,62 @@
+﻿<Window x:Class="Terrerieh___Culminating.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Terrerieh" Height="712.0" Width="1037.0" Loaded="Window_Loaded" KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
+    <Grid x:Name="staticGrid">
+
+        <Grid x:Name="hudGrid" HorizontalAlignment="Left" Height="111" Margin="10,10,0,0" VerticalAlignment="Top" Width="263" Panel.ZIndex="100">
+            <Rectangle x:Name="rectFuel" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="208" Panel.ZIndex="100"/>
+            <TextBlock x:Name="fuelLabelText" HorizontalAlignment="Left" Margin="15,13,0,0" TextWrapping="Wrap" Text="Fuel:" VerticalAlignment="Top" FontSize="16" Width="40" FontWeight="Bold" Panel.ZIndex="101"/>
+            <TextBlock x:Name="fuelLabel" HorizontalAlignment="Left" Margin="61,13,0,0" TextWrapping="Wrap" Text="amountfuel" VerticalAlignment="Top" FontSize="16" Width="140" Panel.ZIndex="101"/>
+            <Rectangle x:Name="rectMoney" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28" Margin="10,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="208" Panel.ZIndex="100"/>
+            <TextBlock x:Name="moneyLabelText" HorizontalAlignment="Left" Margin="15,43,0,0" TextWrapping="Wrap" Text="Money:" VerticalAlignment="Top" FontSize="16" Width="58" FontWeight="Bold" Panel.ZIndex="101"/>
+            <TextBlock x:Name="moneyHudLabel" HorizontalAlignment="Left" Margin="83,43,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="16" Width="84" Panel.ZIndex="101"/>
+            <TextBlock x:Name="cargoLabelText" HorizontalAlignment="Left" Margin="12,74,0,0" TextWrapping="Wrap" Text="Cargo:" VerticalAlignment="Top" FontSize="16" Width="58" FontWeight="Bold" Panel.ZIndex="101"/>
+            <TextBlock x:Name="cargoHudLabel" HorizontalAlignment="Left" Margin="77,74,0,0" TextWrapping="Wrap" Text="0 / 10" VerticalAlignment="Top" FontSize="16" Width="124" Panel.ZIndex="101"/>
+            <Rectangle x:Name="rectCargo" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28" Margin="10,70,0,0" Stroke="Black" VerticalAlignment="Top" Width="208" Panel.ZIndex="100"/>
+            <TextBlock x:Name="fuelPercentageLabel" HorizontalAlignment="Left" Margin="163,13,0,0" TextWrapping="Wrap" Text="100%" VerticalAlignment="Top" FontSize="16" Width="55" Panel.ZIndex="101"/>
+        </Grid>
+
+        <Grid x:Name="store" HorizontalAlignment="Left" Height="440" Margin="140,126,0,0" VerticalAlignment="Top" Width="748" Background="#FFE0E0E0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="97*"/>
+                <ColumnDefinition Width="90*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="368" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="354"/>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="368" Margin="384,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="354" Grid.ColumnSpan="2"/>
+            <ListBox x:Name="lbInventory" HorizontalAlignment="Left" Height="298" Margin="16,63,0,0" VerticalAlignment="Top" Width="315" Background="White" Grid.Column="1"/>
+            <Rectangle Fill="White" HorizontalAlignment="Left" Height="298" Margin="31,63,0,0" Stroke="Black" VerticalAlignment="Top" Width="312"/>
+            <Rectangle x:Name="rectDrill" Fill ="Transparent" HorizontalAlignment="Left" Height="52" Margin="38,203,0,0" VerticalAlignment="Top" Width="298" MouseEnter="rectDrill_MouseEnter" MouseDown="rectDrill_MouseDown" MouseLeave="rectDrill_MouseLeave"/>
+            <Rectangle x:Name="rectFuelTank" Fill ="Transparent" HorizontalAlignment="Left" Height="52" Margin="38,143,0,0" VerticalAlignment="Top" Width="298" MouseDown="rectFuelTank_MouseDown" MouseEnter="rectFuelTank_MouseEnter" MouseLeave="rectFuelTank_MouseLeave"/>
+            <Rectangle x:Name="rectCargoBay" Fill ="Transparent" HorizontalAlignment="Left" Height="52" Margin="38,83,0,0" VerticalAlignment="Top" Width="298" MouseDown="rectCargoBay_MouseDown" MouseEnter="rectCargoBay_MouseEnter" MouseLeave="rectCargoBay_MouseLeave"/>
+            <TextBlock x:Name="moneyTextLabel" HorizontalAlignment="Left" Margin="96,396,0,0" TextWrapping="Wrap" Text="Money:" VerticalAlignment="Top" FontSize="20" Grid.Column="1"/>
+            <TextBlock x:Name="moneyLabel" HorizontalAlignment="Left" Margin="182,396,0,0" TextWrapping="Wrap" Text="&lt;money&gt;" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Grid.Column="1"/>
+            <TextBlock HorizontalAlignment="Left" Margin="54,84,0,0" TextWrapping="Wrap" Text="Cargo Bay Upgrade:" VerticalAlignment="Top" FontSize="16"/>
+            <TextBlock x:Name="cargobayDescLabel" HorizontalAlignment="Left" Margin="235,105,0,0" TextWrapping="Wrap" Text="+10 Capacity" VerticalAlignment="Top" FontSize="16" Width="93" FontStyle="Italic" TextAlignment="Right"/>
+            <TextBlock x:Name="cargobayCostLabel" HorizontalAlignment="Left" Margin="235,84,0,0" TextWrapping="Wrap" Text="1000" VerticalAlignment="Top" FontSize="16" Width="93" FontWeight="Bold" TextAlignment="Right"/>
+            <TextBlock HorizontalAlignment="Left" Margin="54,146,0,0" TextWrapping="Wrap" Text="Fuel Tank Upgrade:" VerticalAlignment="Top" FontSize="16"/>
+            <TextBlock x:Name="fueltankDescLabel" HorizontalAlignment="Left" Margin="190,167,0,0" TextWrapping="Wrap" Text="+10 Capacity" VerticalAlignment="Top" FontSize="16" Width="138" FontStyle="Italic" TextAlignment="Right"/>
+            <TextBlock x:Name="fueltankCostLabel" HorizontalAlignment="Left" Margin="235,146,0,0" TextWrapping="Wrap" Text="750" VerticalAlignment="Top" FontSize="16" Width="93" FontWeight="Bold" TextAlignment="Right"/>
+            <TextBlock HorizontalAlignment="Left" Margin="54,203,0,0" TextWrapping="Wrap" Text="Drill Upgrade:" VerticalAlignment="Top" FontSize="16"/>
+            <TextBlock x:Name="drillDescLabel" HorizontalAlignment="Left" Margin="154,224,0,0" TextWrapping="Wrap" Text="Coalite-Bronzide Drill" VerticalAlignment="Top" FontSize="16" Width="174" FontStyle="Italic" TextAlignment="Right"/>
+            <TextBlock x:Name="drillCostLabel" HorizontalAlignment="Left" Margin="235,203,0,0" TextWrapping="Wrap" Text="500" VerticalAlignment="Top" FontSize="16" Width="93" FontWeight="Bold" TextAlignment="Right"/>
+            <Button x:Name="btnSell" Content="Sell All" HorizontalAlignment="Left" Margin="84,22,0,0" VerticalAlignment="Top" Width="191" Height="36" Click="btnSell_Click" Grid.Column="1"/>
+
+            <Button x:Name="btnBuy" Content="Buy" HorizontalAlignment="Left" Margin="85,22,0,0" VerticalAlignment="Top" Width="191" Height="36" Click="btnBuy_Click"/>
+            <Button x:Name="btnRefuel" Content="REFUEL" HorizontalAlignment="Left" Margin="104,394,0,0" VerticalAlignment="Top" Width="161" RenderTransformOrigin="0.5,0.5" Height="36" FontWeight="Bold" Click="btnRefuel_Click"/>
+
+
+        </Grid>
+
+        <Grid x:Name="gameGrid" MouseDown="gameGrid_MouseDown" Margin="-10,0,10,0">
+
+            <Canvas x:Name="canvas_shop" HorizontalAlignment="Left" Height="100" Margin="200,175,0,0" VerticalAlignment="Top" Width="100" Background="#FF9F14FF"/>
+
+
+
+        </Grid>
+    </Grid>
+
+</Window>
